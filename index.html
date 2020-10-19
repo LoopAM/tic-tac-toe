@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tic-Tac-Toe</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <div id="page-container">
+    <div id="tic-tac-toe">
+      <h1>Tic Tac Toe</h1>
+    </div>
+    <div id="game">
+      <div id="input-container">
+        <div id="player-one-inputs">
+          <input id="player-one-input-name" class="input" type="text" placeholder="Player One Name" value="Player One">
+          <input id="player-one-input-mark" class="input" type="text" placeholder="Player One Marker" value="X" maxlength="1">
+        </div>
+        <div id="player-two-inputs">
+          <input id="player-two-input-name" class="input" type="text" placeholder="Player Two Name" value="Player Two">
+          <input id="player-two-input-mark" class="input" type="text" placeholder="Player Two Marker" value="O" maxlength="1">
+        </div>
+        <div id="game-buttons">
+          <button id="start-btn" class="btn" type="button">Start</button>
+          <button id="restart-btn" class="btn "type="button">Restart</button>
+        </div>
+      </div>
+
+      <div id="board">
+        <div id="square-container">
+          <div class="square" data-place="0"></div>
+          <div class="square" data-place="1"></div>
+          <div class="square" data-place="2"></div>
+          <div class="square" data-place="3"></div>
+          <div class="square" data-place="4"></div>
+          <div class="square" data-place="5"></div>
+          <div class="square" data-place="6"></div>
+          <div class="square" data-place="7"></div>
+          <div class="square" data-place="8"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

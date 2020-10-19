@@ -1,0 +1,165 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Main CSS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fredoka One', cursive;
+  background: linear-gradient(135deg, lightgray, gray), no-repeat;
+  height: 100vh;
+}
+
+
+#page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#tic-tac-toe {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+
+  position: relative;
+  top: 1rem;
+  width: auto;
+  
+  font-family: 'Modak', cursive;
+  font-size: 5rem;
+  font-weight: 300;
+  letter-spacing: -3.75rem;
+}
+
+#input-container {
+  position: relative;
+  top: 1rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: auto;
+  width: auto;
+}
+
+#player-one-inputs, #player-two-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+
+  margin: 0.5rem;
+}
+
+.input {
+  height: 3rem;
+  width: 15rem;
+  margin: 0 1rem;
+
+  border-color: blue;
+  border-radius: 1.5rem;
+  text-align: center;
+
+  font-size: 1.5rem;
+}
+
+.input:focus {
+  border: blue solid 5px;
+  transition: 0.4s;
+}
+
+.btn {
+  height: 3rem;
+  width: 15rem;
+  margin: 0.5rem 1rem;
+  background-color: darkblue;
+  color: white;
+
+  border: none;
+  border-radius: 1.5rem;
+
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+#square-container {
+  position: relative;
+  height: 30rem;
+  width: 30rem;
+
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  display: grid;
+  grid-template-columns: 10rem 10rem 10rem;
+  grid-template-rows: 10rem 10rem 10rem;
+  
+  place-items: center;
+}
+
+.square {
+  height: 9.5rem;
+  width: 9.5rem;
+
+  background-color: blue;
+  border-radius: 0.5rem;
+
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 9.5rem;
+}
+
+.square:hover {
+  background-color: darkblue;
+  transition: 0.2s;
+}
